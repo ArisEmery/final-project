@@ -7,7 +7,7 @@ h1 {
   font-size: 50px
 }
 
-p, td, button {
+td, button {
   text-align: center;   
 }
 
@@ -26,4 +26,12 @@ body {
 
 li{
     font-size: xx-large;
+}
+.info {
+  text-align: center;
+  font-size: xx-large;
+}
+
+p {
+  text-align: center;
 }
