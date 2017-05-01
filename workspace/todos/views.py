@@ -14,6 +14,7 @@ def details(request, id):
     context={
         'todo':todo
     }
+    #todo.delete()
     return render(request, 'details.html', context)
     
 def add(request):
@@ -23,7 +24,14 @@ def add(request):
 
         todo = Todo(title=title, text=text)
         todo.save()
-
         return redirect('/todos')
     else:
         return render(request, 'add.html')
+
+def delete(request, id):
+    todo=Todo.objects.get(id=id)
+    context={
+        'todo':todo
+    }
+    todo.delete()
+    return redirect('/todos')

@@ -1,0 +1,10 @@
+{% include 'partials/header.html' %}
+<p>Nothing to see here</p>
+<form action="{% url 'delete' %}" method ="post">
+{% csrf_token %}
+    <input type="submit" value="Submit" />
+</form>
+<br>
+<a href="/"><p>Go Back</p></a>
+
+{% include 'partials/footer.html' %}

@@ -5,11 +5,13 @@
             
         </title>
         {% load static %}
-        <link rel="stylesheet" href="{% static 'CSS/style.css'%}">
+        <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}" />
     </head>
     <body>
         <header>
             <h1>Todo list:</h1>
             <a href="/todos/add">Add to list</a>
+            <hr>
+            <!--<a href="/todos/add">Remove from list</a>-->
             <hr>
         </header>

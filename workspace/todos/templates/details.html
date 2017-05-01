@@ -3,6 +3,7 @@
     <br>
     <h1>{{todo.title}}</h1>
     <p>{{todo.text}}</p>
+    <td><a href="/todos/delete/{{todo.id}}"><button type="button" class="btn btn-default"><p>Remove</p></button></a></td>
     <br>
     Create on {{todo.created_at}}
 {% include 'partials/footer.html' %}
